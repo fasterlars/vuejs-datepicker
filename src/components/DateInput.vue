@@ -131,9 +131,7 @@ export default {
      */
     inputBlurred () {
       if (this.typeable && isNaN(Date.parse(this.input.value))) {
-        this.clearDate()
-        this.input.value = null
-        this.typedDate = null
+       console.log("weeee");
       }
 
       this.$emit('closeCalendar')
